@@ -27,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="FWd-YK-ab2">
             <objects>
-                <viewController id="T7m-0F-hAB" sceneMemberID="viewController">
+                <viewController id="T7m-0F-hAB" customClass="MYOAViewController" customModule="MakeYourAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IfN-Uu-PeR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,22 +75,20 @@
         <!--View Controller-->
         <scene sceneID="cqY-4V-gys">
             <objects>
-                <viewController id="6xD-4j-QTc" sceneMemberID="viewController">
+                <viewController id="6xD-4j-QTc" customClass="MYOAViewController" customModule="MakeYourAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fKo-Fn-pGD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="There is a large monster who is not scared  The Monster Eats You!!  Sorry, You've Lost" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPd-8R-gZc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="There is a large monster who is not scared  The Monster Eats You!!  Sorry, You've Lost" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPd-8R-gZc">
                                 <rect key="frame" x="7" y="88" width="400" height="358"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI5-CV-di5">
-                                <rect key="frame" x="121" y="540" width="173" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI5-CV-di5">
+                                <rect key="frame" x="121" y="540" width="172" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Start Over"/>
                                 <connections>
@@ -100,6 +98,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JQV-kl-3Mc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RI5-CV-di5" firstAttribute="top" secondItem="cPd-8R-gZc" secondAttribute="bottom" constant="94" id="Cmy-7b-gkM"/>
+                            <constraint firstItem="RI5-CV-di5" firstAttribute="centerX" secondItem="cPd-8R-gZc" secondAttribute="centerX" id="NKY-M1-Qem"/>
+                            <constraint firstItem="cPd-8R-gZc" firstAttribute="top" secondItem="JQV-kl-3Mc" secondAttribute="top" constant="88" id="OWJ-UU-78P"/>
+                            <constraint firstItem="cPd-8R-gZc" firstAttribute="leading" secondItem="JQV-kl-3Mc" secondAttribute="leading" constant="7" id="Q4D-tl-fuf"/>
+                            <constraint firstItem="JQV-kl-3Mc" firstAttribute="bottom" secondItem="RI5-CV-di5" secondAttribute="bottom" constant="208" id="aEP-ez-k5a"/>
+                            <constraint firstItem="RI5-CV-di5" firstAttribute="leading" secondItem="JQV-kl-3Mc" secondAttribute="leading" constant="121" id="cOT-iG-zwt"/>
+                            <constraint firstItem="RI5-CV-di5" firstAttribute="centerX" secondItem="fKo-Fn-pGD" secondAttribute="centerX" id="hiU-Ob-96h"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EVi-nV-9yR"/>
                 </viewController>
@@ -110,7 +117,7 @@
         <!--View Controller-->
         <scene sceneID="rLN-e6-khr">
             <objects>
-                <viewController id="9L3-zM-shT" sceneMemberID="viewController">
+                <viewController id="9L3-zM-shT" customClass="MYOAViewController" customModule="MakeYourAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Hc-MF-Plg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +161,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xj4-eU-rss"/>
+        <segue reference="dGM-gP-Von"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
